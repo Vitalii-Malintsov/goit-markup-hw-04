@@ -85,8 +85,7 @@ header {
 
 .header-studio,
 .header-page,
-.header-contact-mail,
-.header-contact-tel,
+.header-contact,
 .header-portfolio {
   display: flex;
   margin-top: 32px;
@@ -103,20 +102,15 @@ header {
   color: var(--link-color);
 }
 
-.header-contact-mail {
-  width: 161px;
-  height: 16px;
+.contact-item {
   display: flex;
-  align-items: center;
   color: var(--text-color);
+  fill: var(--text-color);
 }
 
-.header-contact-tel {
-  width: 142px;
-  height: 16px;
+.header-contact {
   display: flex;
   align-items: center;
-  color: var(--text-color);
 }
 
 .icon-envelope,
@@ -124,26 +118,21 @@ header {
   margin-right: 7px;
 }
 
+.contact-item:hover,
 .header-page:hover,
-.header-contact-mail:hover,
-.header-contact-tel:hover,
 .footer-map:hover,
-.footer-nav:hover,
-.contact-item:hover {
+.footer-nav:hover {
   color: var(--link-color);
   fill: var(--link-color);
 }
 
+.contact-item:focus,
 .header-page:focus,
-.header-contact-mail:focus,
-.header-contact-tel:focus,
 .footer-map:focus,
-.footer-nav:focus,
-.contact-item:focus {
+.footer-nav:focus {
   color: var(--link-color);
   fill: var(--link-color);
 }
-
 /*-------------------Title/Титулка-------------------*/
 
 .title {
