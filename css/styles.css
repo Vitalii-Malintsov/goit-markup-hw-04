@@ -41,7 +41,6 @@ body {
 
 header {
   border-bottom: 1px solid #ececec;
-  background: var(--primary-color);
 }
 
 .box,
@@ -102,37 +101,42 @@ header {
   color: var(--link-color);
 }
 
-.contact-item {
-  display: flex;
-  color: var(--text-color);
-  fill: var(--text-color);
-}
-
 .header-contact {
   display: flex;
   align-items: center;
+  color: var(--text-color);
 }
 
 .icon-envelope,
 .icon-smartphone {
   margin-right: 7px;
+  fill: currentColor;
 }
 
-.contact-item:hover,
 .header-page:hover,
+.header-contact:hover,
 .footer-map:hover,
 .footer-nav:hover {
   color: var(--link-color);
-  fill: var(--link-color);
 }
 
-.contact-item:focus,
+.icon-envelope:hover,
+.icon-smartphone:hover {
+  fill: currentColor;
+}
+
 .header-page:focus,
 .footer-map:focus,
+.header-contact:focus,
 .footer-nav:focus {
   color: var(--link-color);
-  fill: var(--link-color);
 }
+
+.icon-envelope:focus,
+.icon-smartphone:focus {
+  fill: currentColor;
+}
+
 /*-------------------Title/Титулка-------------------*/
 
 .title {
@@ -264,6 +268,7 @@ header {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
+  background-color: var(--primary-fone-color);
 }
 
 .command-title {
@@ -310,6 +315,7 @@ header {
 
 .command-icon:focus {
   background: var(--link-color);
+  fill: var(--primary-fone-color);
 }
 
 /*-------------------Clients/Клиенты-------------------*/
@@ -326,20 +332,19 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0%;
+  padding: 0;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
   width: 170px;
   height: 92px;
-  background-color: var(--primary-fone-color);
+  color: #afb1b8;
 }
 
-.clients-icon:hover {
+.clients-icon:hover,
+.clients-icon:focus {
   border: 1px solid var(--link-color);
-  box-sizing: border-box;
-  border-radius: 4px;
-  fill: var(--link-color);
+  color: var(--link-color);
 }
 
 .icon-logo1,
@@ -348,7 +353,7 @@ header {
 .icon-logo4,
 .icon-logo5,
 .icon-logo6 {
-  fill: #afb1b8;
+  fill: currentColor;
 }
 
 .icon-logo1:hover,
@@ -356,29 +361,36 @@ header {
 .icon-logo3:hover,
 .icon-logo4:hover,
 .icon-logo5:hover,
-.icon-logo6:hover {
-  fill: var(--link-color);
+.icon-logo6:hover,
+.icon-logo1:focus,
+.icon-logo2:focus,
+.icon-logo3:focus,
+.icon-logo4:focus,
+.icon-logo5:focus,
+.icon-logo6:focus {
+  fill: currentColor;
 }
+
 /*-------------------Footer/Подвал-------------------*/
 
 .footer {
-  background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: #2f303a;
 }
 
 .footer-box {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
 }
-.footer-adress {
-  margin-top: 9px;
-  margin-bottom: 0px;
+
+.footer-container {
+  width: 231px;
+  margin-right: 70px;
 }
 
 .footer-list {
   font-style: normal;
-  margin-left: auto;
 }
 
 .footer-list .item:not(:last-child) {
@@ -386,6 +398,8 @@ header {
 }
 
 .footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
   color: var(--primary-fone-color);
 }
 
@@ -408,13 +422,11 @@ header {
 .footer-social {
   margin-top: 0px;
   margin-bottom: 0px;
-  margin-left: 70px;
 }
 
 .footer .title-social {
   margin-top: 0px;
   margin-bottom: 20px;
-  padding-right: 50px;
   color: var(--primary-fone-color);
 }
 
@@ -435,10 +447,7 @@ header {
   fill: var(--primary-fone-color);
 }
 
-.social-icon:hover {
-  background: var(--link-color);
-}
-
+.social-icon:hover,
 .social-icon:focus {
   background: var(--link-color);
 }
@@ -470,6 +479,13 @@ header {
 }
 
 .filter-button:hover {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: var(--primary-fone-color);
+  background: var(--link-color);
+}
+
+.filter-button:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--primary-fone-color);
